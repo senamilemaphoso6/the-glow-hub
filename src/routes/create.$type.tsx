@@ -78,6 +78,8 @@ function CreatePage() {
     setSaving(true);
     try {
       const data: Record<string, unknown> = {};
+      type Json = Parameters<typeof supabase.from>[0] extends never ? never : never;
+      void (0 as unknown as Json);
       if (ct === "recipe") data.ingredients = form.ingredients.split("\n").map((s) => s.trim()).filter(Boolean);
       if (ct === "recipe" || ct === "routine") data.steps = form.steps;
       if (ct === "routine" && form.time_total_min) data.time_total_min = form.time_total_min;
