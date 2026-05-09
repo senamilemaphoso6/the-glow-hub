@@ -14,7 +14,78 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      posts: {
+        Row: {
+          author_id: string
+          body: string
+          content_type: Database["public"]["Enums"]["content_type"]
+          cover_url: string | null
+          created_at: string
+          data: Json
+          excerpt: string | null
+          id: string
+          published: boolean
+          tags: string[]
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          author_id: string
+          body?: string
+          content_type: Database["public"]["Enums"]["content_type"]
+          cover_url?: string | null
+          created_at?: string
+          data?: Json
+          excerpt?: string | null
+          id?: string
+          published?: boolean
+          tags?: string[]
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          author_id?: string
+          body?: string
+          content_type?: Database["public"]["Enums"]["content_type"]
+          cover_url?: string | null
+          created_at?: string
+          data?: Json
+          excerpt?: string | null
+          id?: string
+          published?: boolean
+          tags?: string[]
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          bio: string | null
+          created_at: string
+          display_name: string
+          id: string
+          updated_at: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          bio?: string | null
+          created_at?: string
+          display_name?: string
+          id: string
+          updated_at?: string
+        }
+        Update: {
+          avatar_url?: string | null
+          bio?: string | null
+          created_at?: string
+          display_name?: string
+          id?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
@@ -23,7 +94,7 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      content_type: "blog" | "recipe" | "routine" | "tip"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +221,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      content_type: ["blog", "recipe", "routine", "tip"],
+    },
   },
 } as const
