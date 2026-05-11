@@ -1,4 +1,4 @@
-🌸 The Glow Hub
+The Glow Hub
 A premium, inclusive self-care content platform for women — built with
 React, TanStack Start, Tailwind CSS, Supabase (Lovable Cloud), and the
 Lovable AI Gateway (openai/gpt-5-mini).
@@ -7,7 +7,7 @@ The Glow Hub lets creators publish four content formats — Blog Posts,
 Skincare Recipes, Routines, and Quick Tips — with an AI co-writer that
 produces structured, schema-validated drafts users can edit and publish.
 
-✨ Features
+Features
 Four content types with format-specific editors and renderers.
 AI Co-writer — one click generates a full draft (title, excerpt,
 body, tags, ingredients/steps/tip) from a topic + optional notes.
@@ -17,7 +17,8 @@ Auth + profiles — display name, bio, avatar.
 Personal dashboard to view and manage your published posts.
 Premium design system — warm ivory, terracotta, and forest green
 with Fraunces display + Inter body type.
-🏗 Tech Stack
+
+Tech Stack
 Layer	Tech
 Framework	TanStack Start v1 + React 19
 Styling	Tailwind CSS v4 (semantic tokens in src/styles.css)
@@ -33,7 +34,7 @@ content_type ENUM: 'blog' | 'recipe' | 'routine' | 'tip'
 RLS: anyone can read published posts; only the author can insert/update
 their own. A trigger auto-creates a profile row on signup.
 
-🤖 AI Generation Flow
+AI Generation Flow
 User enters a topic + optional notes in /create/$type.
 Client calls the generateContent server function.
 Server hits Lovable AI Gateway with a type-specific system prompt.
@@ -44,14 +45,14 @@ See prompt-library.md for all system prompts and example user
 prompts, and prompt-engineering-case-study.docx for the deeper
 design rationale.
 
-🚀 Getting Started
+Getting Started
 bun install
 bun run dev
 Lovable Cloud is auto-provisioned — no .env setup required. The AI
 Gateway key (LOVABLE_API_KEY) is injected into server functions
 automatically.
 
-📂 Project Structure
+Project Structure
 src/
 ├─ routes/           # File-based routing (TanStack Start)
 │  ├─ index.tsx      # Unified feed + filters + sidebar
@@ -65,7 +66,7 @@ src/
 │  ├─ ai-generate.functions.ts  # Server fn → Lovable AI Gateway
 │  └─ types.ts
 └─ integrations/supabase/       # Auto-generated client + types
-💖 Design Tokens
+Design Tokens
 Defined in src/styles.css using OKLCH:
 
 Ivory background — warm, low-glare.
