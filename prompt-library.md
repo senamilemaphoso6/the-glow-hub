@@ -1,10 +1,10 @@
-# The Glow Hub — Prompt Library
+# The Glow Hub Prompt Library
 
 A curated, production-ready prompt library powering the AI co-writer in **The Glow Hub**, a self-care content platform for women. Every prompt is paired with a strict output contract (Zod-validated JSON) so the editor receives clean, structured drafts users can refine and publish.
 
 ---
 
-## 1. Design Principles
+ 1. Design Principles
 
 1. **Warm, inclusive voice** — empathetic, body-positive, never preachy or clinical.
 2. **Structured outputs** — every response is JSON validated against a schema (title, excerpt, body, tags, data).
