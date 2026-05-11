@@ -1,21 +1,21 @@
 The Glow Hub
-A premium, inclusive self-care content platform for women — built with
+A premium, inclusive self-care content platform for women built with
 React, TanStack Start, Tailwind CSS, Supabase (Lovable Cloud), and the
 Lovable AI Gateway (openai/gpt-5-mini).
 
-The Glow Hub lets creators publish four content formats — Blog Posts,
-Skincare Recipes, Routines, and Quick Tips — with an AI co-writer that
-produces structured, schema-validated drafts users can edit and publish.
+The Glow Hub lets creators publish four content formats which are blog posts,
+skincare recipes, routines and quick Tips with an AI co-writer that
+produces structured schema-validated drafts users can edit and publish.
 
 Features
 Four content types with format-specific editors and renderers.
-AI Co-writer — one click generates a full draft (title, excerpt,
+AI Co-writer one click generates a full draft (title, excerpt,
 body, tags, ingredients/steps/tip) from a topic + optional notes.
 Unified feed with content-type filters and search.
 Trending tags sidebar powered by published-post tags.
-Auth + profiles — display name, bio, avatar.
+Auth + profiles display name, bio, avatar.
 Personal dashboard to view and manage your published posts.
-Premium design system — warm ivory, terracotta, and forest green
+Premium design system warm ivory, terracotta, and forest green
 with Fraunces display + Inter body type.
 
 Tech Stack
